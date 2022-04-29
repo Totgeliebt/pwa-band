@@ -1,35 +1,30 @@
 import React from 'react';
 import MenuListItem from "./MenuListItem";
 import {StyledMenuList} from "../styles/StyledSideMenu";
+import appsIcon from '../../assets/images/apps-icon-bright.svg'
 
 const content = [{
   id: 1,
-  img: true,
-  body: 'Название',
+  body: 'Lamoda',
+  url: 'https://lamoda.ru'
 },
   {
     id: 2,
-    img: false,
-    body: 'Название',
+    body: 'Telegram',
+    url: 'https://telegram.ru'
   },{
     id: 3,
-    img: true,
-    body: 'Название',
-  },
-  {
-    id: 4,
-    img: true,
-    body: 'Название',
-  },{
-    id: 5,
-    img: false,
-    body: 'Название',
+    body: 'PetShop',
+    url: 'https://petshop.ru'
   },
 ]
 const MenuList = () => {
   return (
    <StyledMenuList>
-    <h2>Список приложений</h2>
+     <div>
+     <img src={appsIcon} alt="apps"/>
+    <h2>Все приложения</h2>
+     </div>
      {content.map((item, index) =>
        <MenuListItem key={index} item={item}/>
      )}

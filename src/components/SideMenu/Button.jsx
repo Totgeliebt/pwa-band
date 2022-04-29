@@ -4,7 +4,7 @@ import {StyledButton} from "../styles/StyledButton";
 const Button = () => {
   return (
     <StyledButton>
-     + Добавить
+      + Добавить PWA
     </StyledButton>
   );
 };

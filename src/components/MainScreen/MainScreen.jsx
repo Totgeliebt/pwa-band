@@ -1,13 +1,14 @@
 import React from 'react';
 import {StyledMainScreen} from "../styles/StyledMainScreen";
-import Statistics from "../../pages/Statistics";
+import AllApps from "../../pages/AllApps/AllApps";
 
 
 const MainScreen = () => {
   return (
 
     <StyledMainScreen>
-      <Statistics/>
+      <AllApps/>
+
     </StyledMainScreen>
 
   );

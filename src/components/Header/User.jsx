@@ -5,12 +5,15 @@ import { StyledUser } from "../styles/StyledHeader";
 
 const User = () => {
   return (
+    // <Flex jc="center" fd="column">
     <StyledUser>
-      <Flex jc="center">
         <img src={user} alt="user" />
-        <h2>User name</h2>
-      </Flex>
+      <div>
+        <h2>NicknameOfUser</h2>
+        <p>@NicknameOfUser</p>
+      </div>
     </StyledUser>
+  // </Flex>
   );
 };
 

@@ -1,61 +1,89 @@
 import styled from "styled-components";
 
-export const StyledSideMenu = styled.div`
-  width: 274px;
+export const MenuWrapper = styled.div`
+  width: 259px;
   height: 100vh;
-  background: #f9f9f9;
+  background: #1A1C1E;
   box-shadow: inset -2px 0px 15px rgba(2, 26, 148, 0.04);
-  padding: 20px 16px;
 `;
 
 export const StyledSearch = styled.div`
   position: relative;
+  margin: 0 16px;
   img {
     position: absolute;
     top: 15px;
     left: 5px;
+    opacity: 0.3;
   }
-  input { width: 242px;
+  input {
+    width: 220px;
     height: 20px;
-    margin: 18px 0 14px;
+    margin: 18px 25px 14px 5px;
     border: none;
     background-color: transparent;
-    border-bottom: 1px solid rgba(36, 172, 216, 1);
+    border-bottom: 2px solid #EEEEEE;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #979797;
+    color: #EEEEEE;
     padding: 0 0 5px 30px;
-    &:focus {
+    opacity: 0.3;
+    &:focus{
       background-color: transparent;
       outline: none;
+      opacity: 1;
+    }
+    &:focus + img {
+      opacity: 1;
     }
   }
-`
-export const StyledMenuListItem =  styled.div`
-  padding: 14px 0 14px 63px;
-  position: relative;
-  p {
-    font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;}
- img {
-   position: absolute;
-   top: 10px;
-   left: 35px;
- }
-  &:hover {
-    background-color: #C4E3ED;
-  }
-`
+`;
+
 export const StyledMenuList = styled.div`
-h2 {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  padding: 14px 32px;
-}
-  h2:hover {
-    background-color: #C4E3ED;
+  position: relative;
+ div {
+   opacity: 0.5;
+ }
+  img {
+    position: absolute;
+    top: 13px;
+    left: 44px;
   }
-`
+  h2{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    padding: 14px 70px;
+  }
+    div:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    opacity: 0.7;
+  }
+`;
+
+export const StyledMenuListItem = styled.div`
+  padding: 7px 44px;
+  position: relative;
+  opacity: 0.5;
+  &:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    opacity: 0.7;
+  }
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+  }
+`;
+

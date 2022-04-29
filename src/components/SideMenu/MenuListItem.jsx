@@ -1,13 +1,11 @@
 import React from 'react';
 import {StyledMenuListItem} from "../styles/StyledSideMenu"
-import clipIcon from '../../assets/images/clip-icon.svg'
 
-const MenuListItem = ({item: {id, img, body}}) => {
+const MenuListItem = ({item: {id, body, url}}) => {
   return (
-    <StyledMenuListItem >{
-      img ? <img src={clipIcon} alt="clip"/> : null
-    }
-      <p>{body}</p>
+    <StyledMenuListItem >
+      <h3>{body}</h3>
+      <p>{url}</p>
     </StyledMenuListItem>
   );
 };
