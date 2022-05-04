@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledAllApps = styled.div`
+export const PageContainer = styled.div`
   width: 973px;
   background: #FFFFFF;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.04);

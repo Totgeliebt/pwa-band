@@ -3,7 +3,7 @@ import {StyledMenuListItem} from "../styles/StyledSideMenu"
 
 const MenuListItem = ({item: {id, body, url}}) => {
   return (
-    <StyledMenuListItem >
+    <StyledMenuListItem>
       <h3>{body}</h3>
       <p>{url}</p>
     </StyledMenuListItem>

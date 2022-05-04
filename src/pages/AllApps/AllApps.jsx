@@ -1,33 +1,34 @@
-import React from "react";
-import { StyledAllApps } from "../../components/styles/StyledAllApps";
+import React, {useState} from "react";
+import { PageContainer } from "../../components/styles/PageContainer";
 import AppVisitorsItem from "./AppVisitorsItem";
 
 const AllApps = () => {
+
   const content = [
     {
       id: 1,
       appTitle: "lamoda.ru",
-      visitorsChart: "",
+      visitorsChartData: {},
     },
     {
       id: 2,
       appTitle: "telegram.ru",
-      visitorsChart: "",
+      visitorsChartData: {},
     },
     {
       id: 3,
       appTitle: "petshop.ru",
-      visitorsChart: "",
+      visitorsChartData: {},
     },
 
   ];
   return (
-    <StyledAllApps>
+    <PageContainer>
       <h3>Все приложения</h3>
       {content.map((app, id) => (
         <AppVisitorsItem key={id} app={app} />
       ))}
-    </StyledAllApps>
+    </PageContainer>
   );
 };
 

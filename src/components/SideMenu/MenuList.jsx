@@ -21,7 +21,7 @@ const content = [{
 const MenuList = () => {
   return (
    <StyledMenuList>
-     <div>
+     <div className='active'>
      <img src={appsIcon} alt="apps"/>
     <h2>Все приложения</h2>
      </div>

@@ -62,6 +62,10 @@ export const StyledMenuList = styled.div`
     border-radius: 15px;
     opacity: 0.7;
   }
+  div.active {
+    opacity: 1;
+    border-left: 4px solid white;
+  }
 `;
 
 export const StyledMenuListItem = styled.div`
@@ -84,6 +88,10 @@ export const StyledMenuListItem = styled.div`
     font-size: 14px;
     line-height: 16px;
     color: #fff;
+  }
+  &.active {
+    opacity: 1;
+    border-left: 4px solid white;
   }
 `;
 
