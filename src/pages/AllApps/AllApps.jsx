@@ -9,16 +9,19 @@ const AllApps = () => {
       id: 1,
       appTitle: "lamoda.ru",
       visitorsChartData: {},
+      rating: 144,
     },
     {
       id: 2,
       appTitle: "telegram.ru",
       visitorsChartData: {},
+      rating: 10,
     },
     {
       id: 3,
       appTitle: "petshop.ru",
       visitorsChartData: {},
+      rating: 57,
     },
 
   ];

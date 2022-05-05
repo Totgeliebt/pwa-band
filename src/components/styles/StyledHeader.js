@@ -31,10 +31,12 @@ export const StyledUser = styled.div`
   display: flex;
   align-items: center;
   padding-right: 32px;
-  img {
+  position: relative;
+  img:first-child {
     width: 44px;
     height: 44px;
     margin-right: 10px;
+    cursor: auto;
   }
   h2 {
     color: #1A1C1E;
@@ -47,5 +49,33 @@ export const StyledUser = styled.div`
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
+  }
+  div{
+    margin-right: 16px;
+  }
+  img {
+    cursor: pointer;
+  }
+  .logout {
+    width: 213px;
+    height:  41px;
+    background: #1A1C1E;
+    border-radius: 15px;
+    top: 65px;
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #D15537;
+    padding: 11px 0 11px 20px;
+    z-index: 100;
+    display: flex;
+  }
+  .logout > img {
+    width: 20px;
+    height: 20px;
+  }
+  .logout > span {
+    padding: 2px 0 0 8px;
   }
 `;
