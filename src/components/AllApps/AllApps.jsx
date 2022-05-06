@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import { PageContainer } from "../../components/styles/PageContainer";
+import React from "react";
+import { PageContainer } from "../styles/PageContainer";
 import AppVisitorsItem from "./AppVisitorsItem";
 
 const AllApps = () => {

@@ -30,29 +30,30 @@ const MyChart = () => {
     }
     ]
   })
-
+ const chartOptions = {responsive:true,
+   maintainAspectRatio: false,
+   scales: {
+     x: {
+       grid: {
+         display: false
+       }
+     },
+     y: {
+       display: false,
+       grid: {
+         display: false
+       }
+     }},
+   plugins: {
+     legend: {
+       display: false,
+     }}
+ }
   return (
     <div>
       <Line data={visitorsChartData}
             width={219} height={65}
-            type="line" options={{responsive:true,
-        maintainAspectRatio: false, scales: {
-          x: {
-            grid: {
-              display: false
-            }
-          },
-          y: {
-            display: false,
-            grid: {
-              display: false
-            }
-          }},
-        plugins: {
-          legend: {
-            display: false,
-          }}
-          }}
+            type="line" options={chartOptions}
       />
     </div>
   );

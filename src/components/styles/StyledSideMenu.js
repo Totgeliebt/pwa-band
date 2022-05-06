@@ -1,8 +1,9 @@
 import styled from "styled-components";
-
+export const StyledSideMenu = styled.div`
+height: 100vh;
+`
 export const MenuWrapper = styled.div`
   width: 259px;
-  height: 100vh;
   background: #1A1C1E;
   box-shadow: inset -2px 0px 15px rgba(2, 26, 148, 0.04);
 `;
@@ -72,6 +73,9 @@ export const StyledMenuListItem = styled.div`
   padding: 7px 44px;
   position: relative;
   opacity: 0.5;
+a{
+  text-decoration: none;
+}
   &:hover{
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;

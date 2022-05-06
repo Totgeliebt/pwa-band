@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const StyledStatisticsMenu = styled.div`
+  margin-bottom: 10px;
+  position: relative;
 ul{
   display: flex;
   list-style: none;
@@ -20,5 +22,15 @@ li{
   .active {
     background: #1A1C1E;
     color: #EEEEEE;
+  }
+  .users{
+    position: absolute;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ACACAC;
+    transform: rotate(-90deg);
+    top: 250px;
+    left:-25px;
   }
 `

@@ -1,10 +1,11 @@
 import React from 'react';
+import {PageContainer} from "../components/styles/PageContainer";
 
 const Editing = () => {
   return (
-    <div>
-      
-    </div>
+   <PageContainer>
+  <div>Editing</div>
+   </PageContainer>
   );
 };
 

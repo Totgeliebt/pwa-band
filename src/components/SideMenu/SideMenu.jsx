@@ -1,19 +1,20 @@
 import React from "react";
 import Button from "./Button";
-import {MenuWrapper} from "../styles/StyledSideMenu";
+import {MenuWrapper, StyledSideMenu} from "../styles/StyledSideMenu";
 import Search from "./Search";
 import MenuList from "./MenuList";
-import PwaMenu from "../PwaMenu/PwaMenu";
 
 const SideMenu = () => {
   return (
-    <section>
-      <MenuWrapper>
+
+        <MenuWrapper>
+          <StyledSideMenu>
         <Button />
         <Search />
         <MenuList />
-      </MenuWrapper>
-    </section>
+          </StyledSideMenu>
+        </MenuWrapper>
+
   );
 };
 

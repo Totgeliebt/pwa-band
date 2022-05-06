@@ -3,7 +3,11 @@ import styled from 'styled-components'
 export const StyledPwaMenu = styled.div`
   position: relative;
   color: #fff;
-  
+  a{
+    text-decoration: none;
+    opacity: 0.5;
+    color: white;
+  }
 div {
   padding: 7px 0 7px 44px;
   margin: 19px 0 17px;
