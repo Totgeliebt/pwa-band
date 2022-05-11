@@ -2,22 +2,21 @@ import React from 'react';
 import Header from "../../../components/Header/Header";
 import {Flex} from "../../../components/styles/Flex";
 import PwaMenu from "../../../components/PwaMenu/PwaMenu";
-import Editing from "../../Editing";
-import {StyledSideMenu} from "../../../components/styles/StyledSideMenu";
 import {StyledBackground} from "../../../components/styles/PageContainer";
+import Statistics from "../Statistics";
 
-const EditPage = () => {
+const StatisticsByDay = () => {
   return (
     <div>
       <Header />
       <Flex>
         <PwaMenu/>
         <StyledBackground>
-          <Editing/>
+          <Statistics/>
         </StyledBackground>
       </Flex>
     </div>
   );
 };
 
-export default EditPage;
+export default StatisticsByDay;

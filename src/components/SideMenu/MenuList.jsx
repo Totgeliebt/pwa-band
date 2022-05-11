@@ -18,6 +18,7 @@ const content = [{
     url: 'https://petshop.ru'
   },
 ]
+
 const MenuList = () => {
   return (
    <StyledMenuList>

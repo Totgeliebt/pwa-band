@@ -43,16 +43,7 @@ const ChartByWeek = () => {
         ticks: {
           stepSize: 10,
         },
-        // beginAtZero: true,
-
       },
-      // // plugins: {
-      //   title: {
-      //     display: true,
-      //     text: 'Пользователи',
-      //     color: "#ACACAC",
-      //   }
-      // // },
     }
   };
 
