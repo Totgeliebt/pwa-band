@@ -1,11 +1,10 @@
-import React from "react";
-import { Line } from "react-chartjs-2";
+import React from 'react';
+import {Line} from "react-chartjs-2";
 
-const ChartByWeek = () => {
-
+const ChartByPeriod = ({chartData: {labels, clicksData, downloadsData}}) => {
   const dataClicks = {
     label: "Клики",
-    data: [10, 30, 30, 20, 30, 30, 30],
+    data: clicksData,
     lineTension: 0,
     fill: false,
     backgroundColor: "green",
@@ -14,7 +13,7 @@ const ChartByWeek = () => {
 
   const dataDownloads = {
     label: "Скачивания",
-    data: [10, 20, 20, 10, 20, 20, 20],
+    data: downloadsData,
     lineTension: 0,
     fill: false,
     backgroundColor: "blue",
@@ -22,7 +21,7 @@ const ChartByWeek = () => {
   };
 
   const chartData = {
-    labels: ["6 апр", "7 апр", "8 апр", "9 апр", "10 апр", "11 апр", "12 апр"],
+    labels: labels,
     datasets: [dataClicks, dataDownloads],
   };
 
@@ -60,4 +59,4 @@ const ChartByWeek = () => {
   );
 };
 
-export default ChartByWeek;
+export default ChartByPeriod;

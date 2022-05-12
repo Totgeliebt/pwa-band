@@ -1,11 +1,16 @@
-import React from 'react';
-import {PageContainer} from "../components/styles/PageContainer";
+import React from "react";
+import {
+  PageContainer,
+  StyledBackground,
+} from "../components/styles/PageContainer";
 
 const Editing = () => {
   return (
-   <PageContainer>
-  <div>Editing</div>
-   </PageContainer>
+    <StyledBackground>
+      <PageContainer>
+        <div>Editing</div>
+      </PageContainer>
+    </StyledBackground>
   );
 };
 

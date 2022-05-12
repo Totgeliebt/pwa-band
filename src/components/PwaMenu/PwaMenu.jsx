@@ -7,12 +7,10 @@ import editIcon from '../../assets/images/edit-bright.svg'
 import statisticsIcon from '../../assets/images/stats-bright.svg'
 import previewIcon from '../../assets/images/preview-bright.svg'
 import {Link, NavLink} from "react-router-dom";
+import MenuListItem from "../SideMenu/MenuListItem";
 
 
-const PwaMenu = ({item}) => {
-const [isActive, setIsActiveItem] = useState(false)
-
-
+const PwaMenu = () => {
   return (
     <MenuWrapper>
       <StyledPwaMenu>
@@ -22,14 +20,13 @@ const [isActive, setIsActiveItem] = useState(false)
       <h3>Lamoda</h3>
       <p>https://lamoda.ru</p>
       </Link> </div>
-      {/*<MenuListItem item={item}/>*/}
+      {/*<MenuListItem/>*/}
         <ul>
         <li>
           <NavLink to='/preview'><img src={previewIcon} alt="preview"/>Предпросмотр</NavLink></li>
         <li>
-          <NavLink to='/statisticsByWeek'><img src={statisticsIcon} alt="statistics"/>Статистика</NavLink></li>
+          <NavLink to='/statistics/week'><img src={statisticsIcon} alt="statistics"/>Статистика</NavLink></li>
         <li
-          // onClick={() => setIsActiveItem(!isActive)} className={isActive ? 'active' : null}
         ><NavLink to='/editing'><img src={editIcon} alt="edit"/>Редактирование</NavLink></li>
         <li><img src={deleteIcon} alt="delete"/><p>Удалить PWA</p></li>
         </ul>

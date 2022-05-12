@@ -65,7 +65,6 @@ export const StyledMenuList = styled.div`
   }
   div.active {
     opacity: 1;
-    border-left: 4px solid white;
   }
 `;
 
@@ -95,7 +94,6 @@ a{
   }
   &.active {
     opacity: 1;
-    border-left: 4px solid white;
   }
 `;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {StyledMenuListItem} from "../styles/StyledSideMenu"
 import {Link} from "react-router-dom";
 
-const MenuListItem = ({item: {id, body, url}}) => {
+const MenuListItem = ({item: {body, url}}) => {
   return (
     <StyledMenuListItem>
       <Link to='/preview'>

@@ -16,7 +16,7 @@ import {
 
 ChartJS.register(LineController, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler, );
 
-const MyChart = () => {
+const AppChart = () => {
   const [visitorsChartData, setVisitorsChartData] = useState({
     labels: ['', '', '', '','', '', ''],
     datasets:[{
@@ -59,4 +59,4 @@ const MyChart = () => {
   );
 };
 
-export default MyChart;
+export default AppChart;
