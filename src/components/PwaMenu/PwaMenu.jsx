@@ -1,26 +1,29 @@
-import React, {useState} from 'react';
+import React from 'react';
 import goBackIcon from '../../assets/images/back-icon.svg'
-import {StyledPwaMenu, StyledPwaMenuItem} from "../styles/StyledPwaMenu";
+import {StyledPwaMenu} from "../styles/StyledPwaMenu";
 import {MenuWrapper} from "../styles/StyledSideMenu";
 import deleteIcon from '../../assets/images/delete-icon.svg'
 import editIcon from '../../assets/images/edit-bright.svg'
 import statisticsIcon from '../../assets/images/stats-bright.svg'
 import previewIcon from '../../assets/images/preview-bright.svg'
-import {Link, NavLink} from "react-router-dom";
-import MenuListItem from "../SideMenu/MenuListItem";
+import {Link, NavLink, useLocation} from "react-router-dom";
 
 
 const PwaMenu = () => {
+  const location = useLocation()
+  const {body, url} = location.state
   return (
     <MenuWrapper>
       <StyledPwaMenu>
       <img src={goBackIcon} alt="go back"/>
       <div className='item'>
         <Link to='/'>
-      <h3>Lamoda</h3>
-      <p>https://lamoda.ru</p>
-      </Link> </div>
-      {/*<MenuListItem/>*/}
+          {/*<h3>Lamoda</h3>*/}
+          {/*<p>https://lamoda.ru</p>*/}
+      <h3>{body}</h3>
+      <p>{url}</p>
+      </Link>
+      </div>
         <ul>
         <li>
           <NavLink to='/preview'><img src={previewIcon} alt="preview"/>Предпросмотр</NavLink></li>

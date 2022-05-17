@@ -1,22 +1,21 @@
 import React from "react";
 import Header from "./Header/Header";
 import SideMenu from "./SideMenu/SideMenu";
-import { Outlet } from "react-router-dom";
+import {Outlet, useMatch} from "react-router-dom";
 import { Flex } from "./styles/Flex";
 import { StyledBackground } from "./styles/PageContainer";
 import PwaMenu from "./PwaMenu/PwaMenu";
 
 const Layout = () => {
-  // if path='/' show sidemenu otherwise show pwamenu
-
+  const match = useMatch("/");
   return (
     <>
       <Header />
       <Flex>
-        {/*{path="/" ? <SideMenu />: <PwaMenu/>}*/}
-
+        {match ? <SideMenu />: <PwaMenu/>}
+        <StyledBackground>
           <Outlet />
-
+        </StyledBackground>
       </Flex>
     </>
   );

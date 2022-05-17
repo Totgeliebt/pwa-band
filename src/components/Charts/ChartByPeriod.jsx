@@ -1,7 +1,7 @@
 import React from 'react';
 import {Line} from "react-chartjs-2";
 
-const ChartByPeriod = ({chartData: {labels, clicksData, downloadsData}}) => {
+const ChartByPeriod = ({chartData: {labels, clicksData, installsData}}) => {
   const dataClicks = {
     label: "Клики",
     data: clicksData,
@@ -11,9 +11,9 @@ const ChartByPeriod = ({chartData: {labels, clicksData, downloadsData}}) => {
     borderColor: "green",
   };
 
-  const dataDownloads = {
+  const dataInstalls = {
     label: "Скачивания",
-    data: downloadsData,
+    data: installsData,
     lineTension: 0,
     fill: false,
     backgroundColor: "blue",
@@ -22,7 +22,7 @@ const ChartByPeriod = ({chartData: {labels, clicksData, downloadsData}}) => {
 
   const chartData = {
     labels: labels,
-    datasets: [dataClicks, dataDownloads],
+    datasets: [dataClicks, dataInstalls],
   };
 
   const chartOptions = {

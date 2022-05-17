@@ -16,12 +16,12 @@ import {
 
 ChartJS.register(LineController, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler, );
 
-const AppChart = () => {
-  const [visitorsChartData, setVisitorsChartData] = useState({
+const AppChart = ({baseChart}) => {
+  const [appVisitorsData, setAppVisitorsData] = useState({
     labels: ['', '', '', '','', '', ''],
     datasets:[{
       // label: 144,
-      data: [0, 117,145, 14, 160, 112, 15],
+      data: baseChart,
       backgroundColor: 'rgba(54, 162, 235, 0.2)',
       borderColor:'rgba(54, 162, 235, 1)',
       tension: 0.1,
@@ -49,9 +49,11 @@ const AppChart = () => {
        display: false,
      }}
  }
+
   return (
     <div>
-      <Line data={visitorsChartData}
+      <Line
+        data={appVisitorsData}
             width={219} height={65}
             type="line" options={chartOptions}
       />
