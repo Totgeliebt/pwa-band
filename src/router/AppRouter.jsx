@@ -6,7 +6,7 @@ import AllApps from "../components/AllApps/AllApps";
 import Statistics from "../pages/Statistics/Statistics";
 import StatisticsByDay from "../pages/Statistics/StatisticsByDay";
 import StatisticsByMonth from "../pages/Statistics/StatisticsByMonth";
-import Editing from "../pages/Editing";
+import Editing from "../pages/Editing/Editing";
 
 const AppRouter = () => {
   return (

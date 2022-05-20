@@ -10,18 +10,18 @@ import {Link, NavLink, useLocation} from "react-router-dom";
 
 
 const PwaMenu = () => {
-  const location = useLocation()
-  const {body, url} = location.state
+  // const location = useLocation()
+  // const {body, url} = location.state
   return (
     <MenuWrapper>
       <StyledPwaMenu>
       <img src={goBackIcon} alt="go back"/>
       <div className='item'>
         <Link to='/'>
-          {/*<h3>Lamoda</h3>*/}
-          {/*<p>https://lamoda.ru</p>*/}
-      <h3>{body}</h3>
-      <p>{url}</p>
+          <h3>Lamoda</h3>
+          <p>https://lamoda.ru</p>
+      {/*<h3>{body}</h3>*/}
+      {/*<p>{url}</p>*/}
       </Link>
       </div>
         <ul>

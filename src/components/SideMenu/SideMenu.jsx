@@ -8,7 +8,7 @@ const SideMenu = () => {
   return (
     <MenuWrapper>
       <StyledSideMenu>
-        <Button />
+        <Button text='+ Добавить PWA' width={'227px'} margin={'16px'}/>
         <Search />
         <MenuList />
       </StyledSideMenu>

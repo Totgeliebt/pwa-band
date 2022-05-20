@@ -1,10 +1,10 @@
 import React from 'react';
 import {StyledButton} from "../styles/StyledButton";
 
-const Button = () => {
+const Button = ({width, text, onClick, margin}) => {
   return (
-    <StyledButton>
-      + Добавить PWA
+    <StyledButton margin={margin} width={width} onClick={onClick}>
+      {text}
     </StyledButton>
   );
 };
