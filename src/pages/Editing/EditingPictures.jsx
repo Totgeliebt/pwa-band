@@ -72,7 +72,7 @@ const EditingPictures = ({app:{description}}, setApp) => {
       </div>
       <img className="editing_add-icon" src={addIcon} alt="" />
 
-      <MyTextarea textareaLabel="Описание приложения" rows={4} defaultValue={description}
+      <MyTextarea textareaLabel="Описание приложения" rows={4} value={description}
                   onChange={(e) => setApp({description:e.target.value})}/>
     </StyledEditingPictures>
   );

@@ -10,7 +10,7 @@ const MyTextarea = ({value, onChange, rows, textareaLabel}) => {
         name=""
         id=""
         rows={rows}
-        value={value}
+        defaultValue={value}
         onChange={onChange}
       >
       </textarea>

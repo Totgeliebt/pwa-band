@@ -6,7 +6,7 @@ const EditingUpdateInfo = ({app: {updateInfo}}, setApp) => {
 
   return (
     <StyledEditingUpdateInfo>
-      <MyTextarea onChange={(e) => setApp({updateInfo:e.target.value})} defaultValue={updateInfo} textareaLabel={'Инофрмация' +
+      <MyTextarea onChange={(e) => setApp({updateInfo:e.target.value})} value={updateInfo} textareaLabel={'Инофрмация' +
       ' об обновлении'} rows={11}/>
     </StyledEditingUpdateInfo>
   );

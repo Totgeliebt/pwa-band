@@ -13,6 +13,7 @@ import EditCommentsItem from "./EditCommentsItem";
 import EditCommentsList from "./EditCommentsList";
 import EditUpdateInfo from "./EditUpdateInfo";
 import EditingUpdateInfo from "./EditingUpdateInfo";
+import EditingCommentsList from "./EditingCommentsList";
 
 const Editing = () => {
   const [app, setApp] = useState({
@@ -26,23 +27,17 @@ const Editing = () => {
       ' nullam.',
     rating: 4.7,
     users: 3,
-    updateInfo: "Diam, tristique nunc purus enim tellus auctor aliquet suscipit ornare. Pulvinar amet ipsum ut amet, dignissim dolor. Magna blandit ullamcorper suspendisse consectetur nec, at non faucibus. Pulvinar viverra ipsum elementum in dignissim gravida lobortis et.\n" +
-      "\n" +
-      "Sodales volutpat adipiscing urna tincidunt nunc convallis adipiscing tellus, ultrices. Vel, id ut massa pretium.\n" +
-      "Pharetra dictumst phasellus auctor tellus nulla et. \n" +
-      "Maecenas placerat cras eros, ullamcorper rhoncus phasellus. \n" +
-      "Elit senectus consectetur ullamcorper nec, aliquet elementum, gravida. \n" +
-      "Duis venenatis nunc, tortor mauris, nulla tristique."
+    updateInfo: 'Diam, tristique nunc purus enim tellus auctor aliquet suscipit ornare. Pulvinar amet ipsum ut amet, dignissim dolor. Magna blandit ullamcorper suspendisse consectetur nec, at non faucibus. Pulvinar viverra ipsum elementum in dignissim gravida lobortis et.\n' +
+      '\n' +
+      'Sodales volutpat adipiscing urna tincidunt nunc convallis adipiscing tellus, ultrices. Vel, id ut massa pretium.\n' +
+      'Pharetra dictumst phasellus auctor tellus nulla et. \n' +
+      'Maecenas placerat cras eros, ullamcorper rhoncus phasellus. \n' +
+      'Elit senectus consectetur ullamcorper nec, aliquet elementum, gravida. \n' +
+      'Duis venenatis nunc, tortor mauris, nulla tristique.'
   })
 
   const [isEditing, setIsEditing] = useState(false);
-  // const [nameIsEditing, setNameIsEditing] = useState(
-  //   appName
-  // );
-  // const handleNameChange = (e) => {
-  //   setApp({appName: e.target.value})
-  //   setNameIsEditing(nameIsEditing)
-  // }
+
   return (
     <PageContainer>
       <h3>Редактирование</h3>
@@ -51,11 +46,10 @@ const Editing = () => {
           <div className="content">
             {isEditing ? <EditingHeader app={app} setApp={setApp}/> : <EditHeader app={app} />}
             {isEditing ? <EditingPictures app={app} setApp={setApp}/> : <EditPictures app={app} />}
-            <Flex>
-              <EditingRating/>
-            <EditRating app={app}/>
-            <EditCommentsList/>
-          </Flex>
+            <Flex fd={isEditing ? 'column' : 'row'}>
+            {isEditing ? <EditingRating app={app} setApp={setApp}/> : <EditRating app={app} />}
+              {isEditing ? <EditingCommentsList /> : <EditCommentsList/>}
+            </Flex>
             {isEditing ? <EditingUpdateInfo app={app} setApp={setApp}/> : <EditUpdateInfo app={app}/>}
           </div>
           <div className="side_button">

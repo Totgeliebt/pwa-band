@@ -270,11 +270,70 @@ export const StyledEditRating = styled.div`
   }
 `
 export const StyledEditingRating = styled.div`
-
+  margin-top: 32px;
+  display:flex;
+  align-items: flex-end;
+  
+select {
+  width: 75px;
+  height: 66px;
+  border-radius: 10px;
+  border: 2px solid #1A1C1E;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+}
+  span{
+    padding: 0 12px;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 4px;
+  }
+  .rating_editing-valued {
+    position: relative;
+    margin-left: 60px;
+    text-align: center;
+  }
+  .rating_editing-valued img{
+    position: absolute;
+    top: 35px;
+    left: 0;
+  }
+  .rating_editing-valued p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+  }
+  option{
+    background: #EEEEEE;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  option:hover{
+    background: #E0E0E0;
+  }
 `
 export const StyledEditCommentsList = styled.ul`
   list-style-type: none;
   margin: 67px 0 32px 14px;
+  .add_comment{
+    text-align: center;
+    margin-top: 16px;
+    color: #3465FF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: underline;
+  }
 `
 export const StyledEditCommentsItem = styled.li`
   width: 500px;
@@ -322,6 +381,53 @@ export const StyledEditCommentsItem = styled.li`
     line-height: 12px;
     color: #888888;
     text-align: center;
+  }
+`
+
+
+export const StyledEditingCommentsItem = styled.li`
+  padding-bottom: 24px;
+  border-bottom: 1px solid #BFBFBF;
+  margin-bottom: 12px;
+ h3{
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 19px;
+   text-transform: uppercase;
+   margin-bottom: 12px;
+ }
+  .comments_avatar {
+    margin-right: 23px;
+  }
+  .comments_avatar p,.comments_likes p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 5px;
+  }
+  .comments_rating p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+  }
+  .comments_rating {
+    margin-right: 20px;
+  }
+  .comments_like div{
+   display: flex;
+    margin-top: 4px;
+    justify-content: space-between;
+  
+  }
+  .comments_like img{
+  margin-right: 8px;
+  }
+  .comment {
+    margin: 15px 0 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
   }
 `
 export const StyledEditUpdateInfo = styled.div`
